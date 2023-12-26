@@ -168,7 +168,8 @@ with gr.Blocks(theme=gr.themes.Soft(primary_hue="green", secondary_hue="red")) a
             height=750,
             bubble_full_width=False,
             #the avv.png is the bot avatar image this needs to be present else comment
-            avatar_images=(None, (os.path.join(os.path.dirname(current_dir), "avv.png")))
+            #avatar_images=(None, (os.path.join(os.path.dirname(current_dir), "avv.png")))
+            avatar_images=(None, (os.path.join(os.path.dirname(__file__), "avv.png"))),
         )
     text_box = gr.Textbox(
             placeholder="Enter text and press enter",
